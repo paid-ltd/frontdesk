@@ -9,30 +9,26 @@
 <style>
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #100C2A;
+    background-color: #000; /* Set background to black */
     color: #FFFFFF;
     margin: 0;
     padding: 0;
   }
-  .header {
-    background-color: #FF4F00;
-    padding: 20px;
+  .header, .footer {
+    background-color: #333; /* Dark grey for header and footer */
+    color: #FFFFFF;
+    padding: 20px 0;
     text-align: center;
+  }
+  .highlight {
+    color: #FFD700; /* Gold color for highlights */
   }
   .content {
     padding: 20px;
-  }
-  .highlight {
-    color: #FFD700;
-  }
-  .footer {
-    background-color: #FF4F00;
-    color: #FFFFFF;
-    padding: 10px 0;
-    text-align: center;
+    color: #CCCCCC; /* Light grey for content text */
   }
   a {
-    color: #FFD700;
+    color: #FFD700; /* Maintaining the gold color for links */
   }
   #controls {
     display: none; /* Hide controls initially */
@@ -55,7 +51,6 @@
 
   function toggleMute() {
     // Example function to toggle mute on the AI assistant, if applicable
-    // This function would need API support to actually work
     console.log('Toggle mute functionality not implemented');
   }
 </script>
@@ -67,15 +62,12 @@
   <div class="content">
     <h2>Empower Your Business with Our Automated Receptionist</h2>
     <p>Discover the future of front desk efficiency with Paid Limited’s voicebot technology.</p>
-
     <!-- Embedding the AI Assistant -->
     <iframe id="ai-assistant" src="https://vapi.ai?demo=true&shareKey=4740af72-d2e8-4e9f-bc13-cc3b4d5ae5b0&assistantId=246eda18-3b4d-4b5e-b310-36da2eadb193" style="width:100%; height:500px; border:none;" allow="microphone;"></iframe>
-
     <!-- Controls -->
     <div id="controls">
       <button onclick="toggleMute()">Toggle Mute</button>
     </div>
-
     <h3>Experience the Advantages:</h3>
     <ul>
       <li><strong>Always Open:</strong> Provide non-stop service with 24/7 availability.</li>
@@ -85,7 +77,6 @@
       <li><strong>Expandable:</strong> Scale effortlessly with your growing business needs.</li>
       <li><strong>Trusted Security:</strong> Rely on our commitment to data protection and transaction security.</li>
     </ul>
-
     <p>Join the many businesses enhancing their customer interaction with Paid Limited. <a href="#contact">Contact us</a> for a free demo today!</p>
   </div>
   <div class="footer">
